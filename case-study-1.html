@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" type="text/css" rel="stylesheet"> 
+  <link href="css/nwacs.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAV/HERO SECTION--> 
+<header class="header-main">
+
+   <!-- MOBILE MENU -->
+   <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="case-study-1.html">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/alicia-baker/" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+
+    </ul>
+    <!-- REG MENU -->
+    <ul>
+      <li><a href="#"><img src="images/ab-logo-circle.png" alt="Logo" width="20%"></a></li>
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="case-study-1.html">Projects</a></li>
+      <li class="hideOnMobile"><a href="#">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/alicia-baker/" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO IMAGE -->
+<main>
+  <div class="main-intro">
+    <div class="overlay"></div>
+  </div>
+
+<!-- OVERVIEW SECTION--> 
+<div class="home-page">
+  <div class="problem-section">
+  
+    <h2>Overview</h2>
+    <p>NWACS focus is on empowering individuals with a communication deficit, by connecting them with technology and
+      other tools that allow them to use their voice in alternative ways. A full redesign was created in Figma.</p>
+      <div class="text-with-image">
+        <img src="images/nwacs-overview.png" alt="Overview" style="width: 70%;">
+      </div>
+      <h3 class="team-title">Project Details</h3>
+      <div class="container">
+        <div class="column">
+          <img src="images/icons8-team-100.png" alt="Icon 1">
+          <h3>Team</h3>
+          <p>Four people who evenly divided research & design roles</p>
+        </div>
+      
+        <div class="column">
+          <img src="images/icons8-write-96.png" alt="Icon 2">
+          <h3>Role</h3>
+          <p>My role included user research, prototyping, wireframes, UI Style Guide, slide deck, and presentation.</p>
+        </div>
+      
+        <div class="column">
+          <img src="images/icons8-time-100.png" alt="Icon 3">
+          <h3>Time</h3>
+          <p>2.5 weeks to complete testing & re-design</p>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- PROBLEM SECTION -->
+<section class="problem-section">
+  <h2>Problem</h2>
+  <div class="centered-columns">
+    <div class="column-image">
+      <img src="images/nwacs-heuristics.png" alt="Heuristics" style="width: 100%;">
+    </div>
+    <div class="column-text">
+      <p>The current NWACS site has decent overall content organization, but users struggle to locate specific content due to poor content chunking, excessive text, and lack of visual balance.  Users have to spend the majority of their time scanning through bodies of text to find the information they are looking for and can easily miss their target if they aren’t focused enough or aren’t scanning for the correct words.</br>
+
+      </br>Scanning huge bodies of texts takes more time than having symbols, images, and key headings that are automatically recognized.  This extra work can prove frustrating for users and can even lead them to abandon the task altogether--as one of our users did.</br>
+        
+    </br>Additionally, the current visual design aims to be simple and straight forward, but the bold red and white color scheme is loud, further adds to the overall sameness of information and makes it difficult to identify key information.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH PROCESS -->
+<section class="problem-section">
+  <h2>Research</h2>
+  <div class="text-only">
+    <p>The first step was to figure our what our users need and what the current website does not provide. A User Persona was to:</p>
+    <ul>
+      <li>Understand the problem</li>
+      <li>identify user needs</li>
+      <li>and define project goals.</li>
+    </ul>
+    <div class="text-with-image">
+      <img src="images/4.png" alt="Proto Persona" style="width: 50%;">
+    </div>
+    <p>Then we needed to figure to research & evaluate the functionality, intuitiveness, and design of NWACS.info. This
+      included:</p>
+    <ul>
+      <li>Primary User testing</li>
+      <li>Heuristic Evaluations</li>
+      <li>Mid-fidelity 5-second user testing</li>
+    </ul>
+    <div class="text-with-image">
+      <img src="images/6.png" alt="Proto Persona" style="width: 50%;">
+    </div>
+
+    <p>The results were that the current NWACS site has decent overall content organization, but users struggled to
+      locate specific content
+      due to poor content chunking, excessive text, and lack of visual balance. Users had to spend the majority of
+      their time scanning through bodies of text to find the information they are looking for and could easily miss
+      their target if they aren’t focused enough or aren’t scanning for the correct words. Scanning huge bodies of
+      texts took more time than having symbols, images, and key headings that are automatically recognized. This extra
+      work proved frustrating for users and even lead them to abandon the task altogether - as one of our users did.
+    </p>
+  </div>
+</section>
+
+<!-- DEFINITION PROCESS -->
+<section class="problem-section">
+  <h2>Definition</h2>
+  <div class="text-with-image">
+    <img src="images/nwacs-3step-hero.png" alt="Hero 3 Steps">
+  </div>
+  <p>From all the data collected, the tasks were to make the page feel light and airy, and use transparent images and
+    graphics were used when possible. It was a high priority to ensure the brand’s scarlet color had the most impact and
+    was still approachable; to do this the color was used in minimalistic organic shapes and lines.</br>
+
+  <p>Key Heuristic Evaluation takeaways included:</p>
+  <ul>
+    <li>Search bar lacks readily recognizable iconography and graphics</li>
+    <li>Side Menu is overly complicated and adds to visual noise.</li>
+    <li>Second set of social links is redundant.</li>
+    <li>Button styles and links are inconsistent in format and click ability.</li>
+    <li>Events Calendar has similar visual priority for all events including the “biggest event of the year.”</li>
+    <li>The calendar also lacks consistent formatting in the bottom row of cards.</li>
+  </ul>
+</section>
+
+<!-- IDEATION PROCESS -->
+<section class="problem-section">
+  <h2>Ideation & Prototyping</h2>
+  <div class="centered-columns">
+    <div class="column-text">
+      <p>The wireframes started with opaque shapes, these were later adjusted to transparent line objects which allowed
+        visibility of under layers and creates a light pass-through feeling. The finished prototype is easy to navigate,
+        puts important information front and center, and is a visually pleasant experience.</p></br>
+      <p>Key Heuristic Evaluation takeaways included:</p>
+      <ul>
+        <li>Search bar lacks readily recognizable iconography and graphics</li>
+        <li>Side Menu is overly complicated and adds to visual noise.</li>
+        <li>Second set of social links is redundant.</li>
+        <li>Button styles and links are inconsistent in format and click ability.</li>
+        <li>Events Calendar has similar visual priority for all events including the “biggest event of the year.”</li>
+        <li>The calendar also lacks consistent formatting in the bottom row of cards.</li>
+
+      </ul>
+    </div>
+    <div class="column-image">
+      <img src="images/ideation-process.png" alt="Heuristics" style="width: 100%;">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- TESTING PROCESS -->
+<section class="problem-section">
+  <h2>Testing</h2>
+  <div class="centered-columns">
+    <div class="column-image">
+      <img src="images/testing-nwacs.png" alt="Heuristics" style="width: 100%;">
+    </div>
+    <div class="column-text">
+      <p>Initial redesign wireframes focused strongly on information chunking by simplifying text and combining it with
+        consistent graphics and imagery.</br>
+
+        </br>Three 5-second user tests were completed on mid-fidelity wireframes to gather information about user’s
+        first impressions and isolate any potential issues. The testing results were all positive overall and didn’t
+        suggest that major changes were necessary, so the design process moved forward.</p>
+    </div>
+    
+  </div>
+</section>
+</div> <!-- last home page div KEEP!-> 
+
+
+<!-- BEFORE & AFTER -->
+
+<section class="image-section">
+  <div class="image-container">
+    <h2>Before</h2>
+    <img src="images/before-nwacs.png" alt="Before">
+  </div>
+  <div class="image-container">
+    <h2>After</h2>
+    <img src="images/after-nwacs.png" alt="After">
+  </div>
+</section>
+
+
+
+<!-- FORM SECTION--> 
+<div class="form-container">
+  <h2 class="form-title">Let's Talk!</h2>
+  <form class="full-width-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+  <p class="copyright">
+    Copyright 2024 @ www.Alicia-Baker.com. All Rights Reserved.</p>
+</div>
+</div>
+
+<!-- MENU FUNCTION -->
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+</script>
+</body>
+</html>

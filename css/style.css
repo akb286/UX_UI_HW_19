@@ -1,0 +1,391 @@
+/* ENTIRE SITE */
+body {
+  background-color: white;
+  font-family: 'Montserrat';font-size: 16px;
+}
+
+.home-page {
+  width: 80%;
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+/* NAVBAR SECTION */ 
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 50vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+  background-color: white;
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #f0f0f0;
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  backdrop-filter: blur(12px);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 999;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+    
+  }
+
+}
+
+/* ABOUT ME SECTION */
+.container-about {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 50px; 
+}
+
+.text-and-image {
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  align-items: center;
+  padding: 50px 0;
+}
+
+
+.text {
+  flex: 1;
+  padding: 0 20px;
+  font-family: 'Montserrat';font-size: 18px;
+}
+
+.text h2 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat';font-size: 32px;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.learn-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-button {
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.learn-button:hover {
+  background-color: #a5668b;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-and-image {
+    grid-template-columns: 1fr;
+}
+  .learn-button {
+    margin: 10px;
+  }
+}
+
+/* PROJECTS SECTION */
+.container-cs {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on mobile */
+  width: 100%;
+  background-color: #F4F1ED;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 40px; 
+}
+
+.card img {
+  width: 80%; /* Allow the image to fill its container */
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+  height: auto;
+  display: grid; /* centers image w justified content below*/
+  justify-content: center;
+  margin: 0 auto; /* centers image when using display block */
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.purple-button {
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.purple-button:hover {
+  background-color: #a5668b;
+  color: white;
+}
+
+/* CSS for mobile responsiveness */
+@media (min-width: 768px) {
+  .card {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 10px auto; /* Center the card */
+    flex-direction: row; /* Revert to row layout for larger screens */
+  }
+
+  .card-image {
+    width: 20%; /* Set a fixed width for the image on larger screens */
+    padding: 20px;
+  }
+
+  .content {
+    width: 60%; /* Set a width for the content on larger screens */
+    padding: 20px;
+  }
+}
+
+
+
+/* HARD SKILLS SECTION */
+
+.container-skills {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  padding: 20px 0;
+
+}
+
+.column {
+  padding: 10px;
+  background-color: white;
+}
+
+.progress-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background-color: #F4F1ED;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: purple;
+  height: 20px;
+  border-radius: 5px;
+}
+.skills-title {
+  text-align: center;
+}
+
+
+/* SOFT SKILLS SECTION */
+.skills-section {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  background-color: #f8f2ee;
+  padding: 30px; /* Reduce padding for smaller screens */
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow skills to wrap to the next line on smaller screens */
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.skill {
+  margin: 10px; /* Add some spacing between skills */
+}
+
+.skill-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: purple;
+  border-radius: 50%;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+}
+
+.skill-name {
+  margin-left: 5px;
+}
+
+/* CSS for mobile responsiveness */
+@media (max-width: 768px) {
+  .skills-container {
+      flex-direction: column; /* Stack skills vertically on smaller screens */
+  }
+
+  .skill {
+      margin: 10px auto; /* Center each skill horizontally on smaller screens */
+  }
+}
+
+
+
+
+/* FORM SECTION */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';font-size: 18px;
+}
+
+.form-container {
+  background-color: purple;
+  padding: 20px;
+}
+
+.full-width-form {
+  width: 100%;
+  max-width: 600px; /* Set max-width to prevent form from becoming too wide */
+  margin: 0 auto; /* Center the form horizontally */
+  background-color: purple; /* Background color purple */
+  color: white; /* Text color white */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.full-width-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.full-width-form input[type="text"],
+.full-width-form input[type="email"],
+.full-width-form textarea {
+  width: calc(100% - 10px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff; /* Input background color white */
+  font-family: 'Montserrat';font-size: 16px;
+}
+
+.full-width-form textarea {
+  height: 100px; /* Adjust textarea height as needed */
+}
+
+.full-width-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat';font-size: 18px;
+}
+
+.full-width-form button:hover {
+  background-color: #A5668B;
+  color: white;
+}
+.form-title {
+  text-align: center;
+  color: white;
+}
