@@ -10,6 +10,7 @@ body {
   text-align: center; 
 }
 
+
 /* NAVBAR SECTION */ 
 *{
   margin: 0;
@@ -137,21 +138,46 @@ nav li:first-child{
 }
 
 .learn-button {
+  border-radius: 4px;
   background-color: purple;
-  color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  width: 100px;
+  transition: all 0.5s;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
   text-decoration: none;
-  display: inline-block;
 }
 
-.learn-button:hover {
-  background-color: #a5668b;
-  color: white;
+.learn-button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
+
+.learn-button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.learn-button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+  background-color: #a5668b;
+}
+
+.learn-button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
 
 @media only screen and (max-width: 600px) {
   .text-and-image {
@@ -202,19 +228,44 @@ nav li:first-child{
 }
 
 .purple-button {
+  border-radius: 4px;
   background-color: purple;
-  color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  width: 100px;
+  transition: all 0.5s;
   cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
   text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
-.purple-button:hover {
+.purple-button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.purple-button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.purple-button:hover{
+  padding-right: 24px;
+  padding-left:8px;
   background-color: #a5668b;
-  color: white;
+}
+
+.purple-button:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 
 /* CSS for mobile responsiveness */
