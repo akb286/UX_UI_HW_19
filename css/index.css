@@ -35,43 +35,64 @@
 
 
 .cta-button {
-  border-radius: 4px;
-  background-color: purple;
+  font-family: 'Raleway', Arial, sans-serif;
   border: none;
-  color: #fff;
-  text-align: center;
-  padding: 16px;
-  width: 100px;
-  transition: all 0.5s;
+  background-color: purple;
+  border-radius: 5px;
+  color: #ffffff;
   cursor: pointer;
-  margin: 36px;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-  text-decoration: none;
-}
-
-.cta-button{
-  cursor: pointer;
+  padding: 0px 30px;
   display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  line-height: 46px;
+  font-weight: 400;
+  font-size: 1em;
+  outline: none;
   position: relative;
-  transition: 0.5s;
+  overflow: hidden;
+  font-size: 16px;
+  border-radius: 23px;
+  letter-spacing: 2px;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-.cta-button:after {
-  content: '»';
+.cta-button:before {
+  opacity: 0;
+  content: "";
   position: absolute;
-  opacity: 0;  
-  top: 14px;
-  right: -20px;
-  transition: 0.5s;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: inherit;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
 }
-
-.cta-button:hover{
-  padding-right: 24px;
-  padding-left:8px;
+.cta-button:after {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border: 5px solid #5666a5;
+  content: '';
+  border-radius: inherit;
+}
+.cta-button:hover,
+.cta-button.hover {
   background-color: #a5668b;
+  color: #ffffff;
 }
-
-.cta-button:hover:after {
-  opacity: 1;
-  right: 10px;
+.cta-button:hover:before,
+.cta-button.hover:before {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 0.25;
 }
