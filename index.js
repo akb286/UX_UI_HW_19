@@ -29,4 +29,4 @@ const changeProgress = (progressBars, progressValues) => {
 };
 
 /* change progress after 1 second (only for showcase) */
-setTimeout(() => changeProgress(progressBars, progressValues), 1000);
+setTimeout(() => changeProgress(progressBars, progressValues), 9000);
