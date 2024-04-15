@@ -85,14 +85,3 @@
   content: '';
   border-radius: inherit;
 }
-.cta-button:hover,
-.cta-button.hover {
-  background-color: #a5668b;
-  color: #ffffff;
-}
-.cta-button:hover:before,
-.cta-button.hover:before {
-  -webkit-transform: translateY(0%);
-  transform: translateY(0%);
-  opacity: 0.25;
-}

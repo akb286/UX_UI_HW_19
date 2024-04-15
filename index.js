@@ -9,11 +9,14 @@
   }
 
   // BUTTON FUNCTION
-  $(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
-    }
-  );
+  $(document).ready(function(){
+    $(".hover").hover(function(){
+      $(this).css("background-color", "pink");
+      }, function(){
+      $(this).css("background-color", "purple");
+    });
+  });
+  
 
   // PROGRESS BARS
 const progressBars = document.querySelectorAll(".progress");
