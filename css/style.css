@@ -345,14 +345,14 @@ nav li:first-child{
   padding: 20px 0;
 
 }
+.skills-title {
+  text-align: center;
+}
 
 .container-bars {
   margin: 50px;
 }
 
-.skills-title {
-  text-align: center;
-}
 .progress-container {
   height: 0.8rem;
   width: 32rem;
@@ -366,7 +366,7 @@ nav li:first-child{
   width: 0;
   border-radius: 0.4rem;
 
-  background: #ff4754;
+  background: purple;
 
   transition: width 0.4s ease;
 }
@@ -377,6 +377,9 @@ nav li:first-child{
 .progress-title {
   font-size: 1.2rem; /* Adjust font size as needed */
   margin-bottom: 0.5rem; /* Add margin between title and progress bar */
+}
+.animate-progress {
+  transition: width 0.4s ease;
 }
 
 @media only screen and (min-width: 600px) {
